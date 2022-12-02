@@ -15,14 +15,22 @@ class TaskSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('tasks')->insert([
-
+        DB::table('tasks')->insert(
             [
-                'name' => 'comprar',
-                'description' => 'patatas',
-                'status'=> false
-                
+
+                [
+                    'name' => 'comprar',
+                    'description' => 'patatas',
+                    'status' => false,
+
+                ],
+                [
+                    'name' => 'devolver',
+                    'description' => 'tomates',
+                    'status' => false,
+
+                ],
             ]
-        ]);
+        );
     }
 }
